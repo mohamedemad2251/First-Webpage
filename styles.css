@@ -1,0 +1,48 @@
+* {             /*Clears all styles from body & such to remove margins & paddings*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.section-welcome {
+    /* display: flex; */
+    background-color: #636363;
+    width: 100vw;
+    height: 100vh;
+}
+.section-title {
+    display: flex;             /* Make it a flex container */
+    justify-content: center;   /* Center horizontally*/
+    color: #e5e5e5;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+#about-me-paragraph{
+    align-self: center;
+    font-family: sans-serif;
+    /* font-size: 1.4rem; */
+    font-size: 1.3vw;
+    color: #ffffff;
+    text-justify:inter-word;
+    margin: 0% 10% 0% 5%;
+}
+
+.profile-pic{
+    max-height: 40vh;
+    border-radius: 5% 5% 5% 5%;
+}
+.section-2{
+    background-color: #a0a0a0;
+
+}
