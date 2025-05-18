@@ -4,43 +4,110 @@
     box-sizing: border-box;
     }
 
+header{
+    display: flexbox;             /* Make it a flex container */
+    width: 100vw;
+    height: 16vh;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    box-shadow: 0.5vh 0.5vh .5vh 0vh #4f4f65;
+    justify-content: center;   /* Center horizontally*/
+    justify-items: center;
+   
+
+    background-color: #1d1d27;
+    /* background-color: #ffffff; */
+
+    position: sticky;
+    top: 0;
+
+    
+}
+
+.header-title{
+    color: #d5d5ea;
+    /* font-family: sans-serif; */
+    font-family: 'Montserrat';
+    font-weight:600;
+    font-size: 2.5vw;
+}
+
+.header-section-navigation{
+    display: flex;
+    padding-top: 3vh;
+    justify-content: center;
+    width: 100vw;
+}
+
 body{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
-.section-welcome {
-    /* display: flex; */
-    background-color: #636363;
+
+section{
+    display: flex;
     width: 100vw;
-    height: 100vh;
-}
-.section-title {
-    display: flex;             /* Make it a flex container */
-    justify-content: center;   /* Center horizontally*/
-    color: #e5e5e5;
-    font-family: sans-serif;
-    font-size: 1.5vw;
+    height: 82vh;
 }
 
-.about-me{
+.section-welcome {
+    /* display: flex; */
+    background-color: #23232d;
+}
+
+.section-title{
+    color: #d5d5ea;
+    /* font-family: sans-serif; */
+    font-family: 'Montserrat';
+    font-weight:600;
+    font-size: 2vw;
+    width: 50%;
+}
+
+.section-paragraph{
+    align-self: center;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 1.7vw;
+    color: #edeaff;
+    text-justify:inter-word;
+    margin: 0% 10% 0% 5%;
+}
+
+.section-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#38344f;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 1vw;
+    width: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+    color: #9b9bba;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section-button:hover{
+    background-color:#9b9bba;
+    color: #38344f;
+}
+
+#about-me{
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
 }
 
-#about-me-paragraph{
-    align-self: center;
-    font-family: sans-serif;
-    /* font-size: 1.4rem; */
-    font-size: 1.3vw;
-    color: #ffffff;
-    text-justify:inter-word;
-    margin: 0% 10% 0% 5%;
-}
+
 
 .profile-pic{
-    max-height: 40vh;
-    border-radius: 5% 5% 5% 5%;
+    max-height: 50vh;
+    max-width: 50vh;
+    border-radius: 5% 0% 0% 5%;
 }
 .section-2{
     background-color: #a0a0a0;
