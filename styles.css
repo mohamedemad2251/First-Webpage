@@ -4,6 +4,11 @@
     box-sizing: border-box;
     }
 
+html {
+    scroll-padding-top: 18vh;
+    scroll-behavior: smooth;
+}
+
 header{
     display: flexbox;             /* Make it a flex container */
     width: 100vw;
@@ -11,7 +16,7 @@ header{
     padding-top: 1vh;
     padding-bottom: 2vh;
     box-shadow: 0.5vh 0.5vh .5vh 0vh #4f4f65;
-    justify-content: center;   /* Center horizontally*/
+    /* justify-content: center;   Center horizontally */
     justify-items: center;
    
 
@@ -50,28 +55,29 @@ section{
     height: 82vh;
 }
 
-.section-welcome {
-    /* display: flex; */
-    background-color: #23232d;
-}
-
 .section-title{
+    display: flex;
     color: #d5d5ea;
-    /* font-family: sans-serif; */
-    font-family: 'Montserrat';
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Montserrat', sans-serif;
     font-weight:600;
     font-size: 2vw;
-    width: 50%;
+    padding-top: 5%;
+    width: 100%;
 }
 
 .section-paragraph{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+
     align-self: center;
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
     font-size: 1.7vw;
     color: #edeaff;
-    text-justify:inter-word;
-    margin: 0% 10% 0% 5%;
+    margin: 0% 0% 0% 5%;
 }
 
 .section-button{
@@ -96,13 +102,14 @@ section{
     color: #38344f;
 }
 
-#about-me{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
+#about-me {
+    background-color: #23232d;
 }
 
-
+#about-me-text{
+    margin-right: 5%;
+    text-align: justify;
+}
 
 .profile-pic{
     max-height: 50vh;
