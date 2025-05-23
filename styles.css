@@ -5,7 +5,7 @@
     }
 
 html {
-    scroll-padding-top: 18vh;
+    scroll-padding-top: 16vh;
     scroll-behavior: smooth;
 }
 
@@ -50,16 +50,21 @@ body{
 }
 
 section{
-    display: flex;
     width: 100vw;
     height: 82vh;
+}
+
+.section-body{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100vw;
 }
 
 .section-title{
     display: flex;
     color: #d5d5ea;
     justify-content: center;
-    justify-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
     font-size: 2vw;
@@ -75,7 +80,7 @@ section{
     align-self: center;
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
-    font-size: 1.7vw;
+    font-size: 1.8rem;
     color: #edeaff;
     margin: 0% 0% 0% 5%;
 }
@@ -102,7 +107,40 @@ section{
     color: #38344f;
 }
 
-#about-me {
+.cards-showcase{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: 30vh;
+    background-color: #1b1b22;
+    border-radius: 5% 5% 5% 5%;
+}
+
+.card-thumbnail{
+    border-radius: 5% 5% 5% 5%;
+}
+
+.card-title{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #ffffff;
+    justify-content: center;
+    padding-top: 10%;
+    text-shadow: aqua;
+}
+
+#about-me{
     background-color: #23232d;
 }
 
@@ -116,7 +154,6 @@ section{
     max-width: 50vh;
     border-radius: 5% 0% 0% 5%;
 }
-.section-2{
-    background-color: #a0a0a0;
-
+#my-stacks{
+    background-color: #2c2c38;
 }
